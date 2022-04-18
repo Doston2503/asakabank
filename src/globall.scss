@@ -149,7 +149,7 @@ body {
 }
 
 header {
-  height: 100vh;
+  height:650px ;
 
   .left-side {
     padding-top: 100px;
@@ -687,6 +687,68 @@ header {
 
 }
 
+footer{
+  background-color: white;
+  padding:  50px 0;
+  ul{
+    padding-left: 0;
+    li{
+      list-style: none;
+      margin-bottom: 20px;
+    }
+    a{
+      text-decoration: none;
+      color: black;
+      opacity: 0.9;
+      font-family: Acrom-Bold,sans-serif;
+      transition: 0.5s linear;
+      &:hover{
+        color: #d70c17;
+      }
+    }
+  }
+  .social-img{
+    a{
+      text-decoration: none;
+    }
+    img{
+
+      width: 25px;
+      margin-right: 20px;
+      margin-top: 20px;
+    }
+    a:last-child img{
+      width: 30px;
+    }
+  }
+  .top, .bottom   {
+    opacity: 0.9;
+    a{
+      margin: 10px 0;
+      display: block;
+      text-decoration: none ;
+      font-size: 20px;
+      color: #d70c17;
+    }
+  }
+}
+
+.last-section{
+  padding: 30px 0 20px 0;
+  p{
+    margin-bottom: 0;
+    font-size: 18px;
+    opacity: 0.9;
+  }
+  p:last-child{
+    margin-top: 20px;
+    a{
+      text-decoration: none;
+      color: #d70c17;
+    }
+  }
+}
+
 @media (max-width: 576px) {
   ::-webkit-scrollbar-track {
     background: transparent;
@@ -816,12 +878,11 @@ header {
 
     .nav {
       margin-bottom: 50px;
-      flex-wrap: nowrap;
-      overflow-y: scroll;
-      overflow-x: hidden;
     }
 
     .nav-item {
+      width: 100%;
+      margin-bottom: 20px;
       flex-shrink: 0;
     }
 
@@ -895,6 +956,10 @@ header {
         flex-wrap: wrap;
       }
     }
+
+  }
+
+  footer{
 
   }
 }

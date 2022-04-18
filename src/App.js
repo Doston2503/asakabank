@@ -5,6 +5,7 @@ import Header from "./component/Header";
 import Section from "./component/Section";
 import TabSection from "./component/TabSection";
 import CalcSection from "./component/CalcSection";
+import Footer from "./component/Footer";
 
 class App extends Component {
     render() {
@@ -15,6 +16,7 @@ class App extends Component {
                <Section/>
                <TabSection/>
                <CalcSection/>
+               <Footer/>
             </Router>
         );
     }
